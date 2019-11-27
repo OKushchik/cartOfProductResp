@@ -1,0 +1,267 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+li {
+    list-style: none;
+}
+body {
+    background: grey;
+}
+
+.card {
+    position: relative;
+    top: 150px;
+    left: 15%;
+    display: flex;
+    max-width: 1000px;
+}
+.cardImg {
+
+    background: #35b0ad;
+}
+.logo {
+    padding: 20px;
+}
+.photo {
+    width: 110%;
+    position: relative;
+    top: 20px;
+    left: -40px;
+}
+.photo img:nth-child(1){
+    width: 80%;
+}
+.photo img:nth-child(2){
+    position: absolute;
+    left: 30px;
+    top: 160px;
+    width: 100%;
+    z-index: 1;
+}
+.productPosition {
+    display: inline-block;
+    position: absolute;
+    top: 10%;
+    left: 39%;
+}
+.productPositionImg{
+    position: relative;
+    margin-top: 20px;
+    overflow: hidden;
+    width: 120px;
+    height: 120px;
+    z-index: 10;
+}
+.productPositionImg:hover {
+    transform: scale(1.2);
+}
+.productPositionImg::before{
+    position: absolute;
+    top: 0;
+    left: 0;
+    content: '';
+    width: 120px;
+    height: 120px;
+    background: grey;
+    opacity: 50%;
+}
+.productPositionImg img {
+    position: relative;
+    width: 100%;
+
+}
+.productPositionImg:nth-child(3) img{
+    position: relative;
+    bottom: 20px;
+    right: 50px;
+   width: 200%;
+
+}
+
+
+.discription {
+    width: 540px;
+    background: white;
+    padding-left: 100px;
+
+}
+.cardTitle {
+    margin-bottom: 30px;
+}
+.cardTitle h1{
+    margin-top: 20px;
+    font-size: 30px;
+}
+.cardTitle h2,.cardDiscription p {
+    font-size: 15px;
+}
+.discription h2, .discription h1, .discription li, .discription p,
+.discription h3, .discription h4{
+    font-family: "Montserrat Medium";
+    font-weight: lighter;
+    color: #a6adb2;
+    text-transform: uppercase;
+}
+.cardDiscription {
+    width: 100%;
+}
+.cardDiscription p {
+    padding-bottom: 10px;
+}
+.productDescription li::before {
+    content: '';
+    display: inline-block;
+
+    margin-right: 1%;
+    width: 5px;
+    height: 5px;
+    background: #37b0ae;
+}
+.productDescription{
+    font-size: 13px;
+    line-height: 30px;
+}
+.productNav {
+    display: flex;
+    margin-top: 25px;
+    margin-bottom: 25px;
+    font-size: 15px;
+}
+.productNav li {
+    margin-right: 15px;
+}
+.productNav a {
+    text-decoration: none;
+    color: grey;
+}
+.productNav a:hover {
+    color: lightgrey;
+}
+.value {
+    width: 100%;
+    height: 45px;
+}
+.value label {
+    font-size: 0;
+}
+.value input {
+    border: 1px solid grey;
+    width: 45px;
+    height: 100%;
+}
+.btnMinus, .btnPlus {
+    background: white;
+    width: 45px;
+    height: 100%;
+    border: 1px solid grey;
+}
+.productPrice {
+    margin: 20px 0;
+}
+.productPrice h3, .card h4{
+    display: inline-block;
+}
+.productPrice h3 {
+    font-size: 30px;
+    color: #3a4d5c;
+    margin-right: 15px;
+}
+.productPrice h4 {
+    font-size: 10px;
+}
+.btnAdd {
+    margin-bottom: 45px;
+}
+.btnAdd button {
+    border: 1px solid grey;
+    width: 150px;
+    height: 30px;
+}
+.addCard, .addWish {
+    color: grey;
+    background: white;
+}
+
+.add-active {
+    background: #37b0ae;
+    color: white;
+}
+@media screen and (max-width: 945px) {
+    .card {
+        position: relative;
+        top: 150px;
+        left: 0;
+    }
+    .photo {
+        width: 110%;
+        position: relative;
+        top: 20px;
+        left: 0;
+    }
+}
+
+@media screen and (max-width: 685px){
+    .card {
+        position: relative;
+        top: 0;
+        left: 0;
+        display: block;
+        max-width: 300px;
+
+    }
+    .cardImg {
+        width: 100vw;
+        margin: 0;
+        display: block;
+    }
+    .photo {
+        width: 70%;
+        position: relative;
+        top: 0;
+        left: 20%;
+    }
+    .photo img:nth-child(2) {
+        position: absolute;
+        left: 15px;
+        top: 70px;
+        width: 100%;
+        z-index: 1;
+    }
+    .cardTitle h1 {
+        margin-top: 0;
+    }
+    .productPosition {
+        display: flex;
+        justify-content: center;
+        position: relative;
+        top: 0;
+        left: 0;
+
+    }
+    .productPositionImg {
+        position: relative;
+        margin-right: 10px;
+        overflow: hidden;
+        width: 80px;
+        height: 80px;
+        z-index: 10;
+    }
+    .discription {
+        width: 100vw;
+        display: block;
+        padding-left: 10px;
+    }
+    .cardTitle {
+        text-align: center;
+    }
+    .cardDiscription {
+        margin: 0 auto;
+    }
+    .btnAdd {
+        text-align: center;
+        padding-bottom: 10px;
+        margin-bottom: 0;
+    }
+}
