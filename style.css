@@ -65,7 +65,7 @@ body {
     width: 120px;
     height: 120px;
     background: grey;
-    opacity: 50%;
+    opacity:0.5;
 }
 .discription-productPosition__img img {
     position: relative;
@@ -275,7 +275,7 @@ body {
         left: 0;
         content: '';
         background: white;
-        opacity: 60%;
+        opacity:0.5;
     }
     .discription-productPosition__img img {
         position: relative;
